@@ -19,11 +19,11 @@ class Song
 
   def self.new_by_name(title)
     x = self.new
-    x.name = title
+    x.name = @name
     x
   end
 
-  def self.create_by_name(title)
+  def self.create_by_name
     x = self.new
     x.name = @name
     self.all << x
