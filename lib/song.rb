@@ -31,7 +31,7 @@ class Song
     x
   end
 
-  def self.find_by_name
+  def self.find_by_name(title)
     @@song.each do |names|
   end
 
