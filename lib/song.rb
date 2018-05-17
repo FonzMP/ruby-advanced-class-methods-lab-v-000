@@ -17,7 +17,7 @@ class Song
     x
   end
 
-  def self.new_by_name(title)
+  def self.new_by_name
     x = self.new
     x.name = @name
     x
@@ -30,7 +30,7 @@ class Song
     return x
   end
 
-  def self.find_by_name(title)
+  def self.find_by_name
     @@all.each do |names|
       if names.name == title
         return names
