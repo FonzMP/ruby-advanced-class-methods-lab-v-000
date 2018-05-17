@@ -41,7 +41,7 @@ class Song
 
   def self.find_or_create_by_name(title)
     @@all.each do |songs|
-    if !find_by_name(title)
+    if find_by_name(title) == songs
       puts "created"
     else
       find_by_name(title)
