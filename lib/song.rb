@@ -10,7 +10,7 @@ class Song
     self.class.all << self
   end
 
-  def self.create
+  def self.create(name)
     x = self.new
     x.name = @name
     x.artist_name = @artist_name
