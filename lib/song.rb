@@ -12,7 +12,7 @@ class Song
 
   def self.create(title)
     x = self.new
-    x.name = title
+    x.name = @name
     @@all << x
     x
   end
