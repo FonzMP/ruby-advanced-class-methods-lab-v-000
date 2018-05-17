@@ -25,4 +25,6 @@ class Song
     x
   end
 
+  def create_by_name(title)
+
 end
