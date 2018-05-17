@@ -13,6 +13,7 @@ class Song
   def self.create
     self.name = name
     self.artist_name = artist_name
+    @@all << push
   end
 
 end
