@@ -36,7 +36,6 @@ class Song
       if title == names.name
         puts names
       end
-      puts names
     end
   end
 
