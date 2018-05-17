@@ -40,9 +40,8 @@ class Song
   end
 
   def self.find_or_create_by_name(title)
-    @@all.each do |songs|
-    if find_by_name(title) == songs
-      puts "created"
+    if !find_by_name(title)
+      create_by_name(title)
     else
       find_by_name(title)
     end
