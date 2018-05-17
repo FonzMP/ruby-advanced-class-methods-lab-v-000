@@ -35,7 +35,8 @@ class Song
     @@song.each do |names|
       if title == names
         puts names
-      end end
+      end
+    end
   end
 
 end
