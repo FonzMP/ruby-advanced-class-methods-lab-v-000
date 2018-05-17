@@ -22,7 +22,7 @@ class Song
     x = self.new
     x.name = title
     @@all << x
-    # x
+    x
   end
 
 end
