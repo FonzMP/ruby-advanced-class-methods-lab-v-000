@@ -14,7 +14,6 @@ class Song
     x = self.new
     x.name = @name
     x.artist_name = @artist_name
-    @@all << x
     x
   end
 
