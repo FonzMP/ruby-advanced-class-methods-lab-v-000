@@ -34,7 +34,7 @@ class Song
   def self.find_by_name(title)
     @@all.each do |names|
       if names.name == title
-        return names.to_s
+        return names
       end
     end
   end
