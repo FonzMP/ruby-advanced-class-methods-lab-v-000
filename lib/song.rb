@@ -13,8 +13,8 @@ class Song
   def self.create
     x = self.new
     x.name = @name
-    p.artist_name = @artist_name
-
+    x.artist_name = @artist_name
+    @@all << x
   end
 
 end
