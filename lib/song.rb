@@ -1,5 +1,3 @@
-require 'pry'
-
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -44,7 +42,6 @@ class Song
   def self.find_or_create_by_name(title)
     @@all.each do |names|
       if names.name == title
-        binding.pry
         find_by_name(title)
       else
         create_by_name(title)
