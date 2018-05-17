@@ -27,7 +27,7 @@ class Song
     x = self.new
     x.name = title
     @@all << x
-    x
+    return x
   end
 
   def self.find_by_name(title)
