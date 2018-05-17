@@ -18,4 +18,8 @@ class Song
     x
   end
 
+  def self.new_by_name
+
+  end
+
 end
