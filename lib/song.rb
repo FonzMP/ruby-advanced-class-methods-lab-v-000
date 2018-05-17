@@ -12,6 +12,8 @@ class Song
 
   def self.create
     x = self.new
+    p.name = @name
+    p.artist_name = @artist_name
   end
 
 end
