@@ -39,6 +39,7 @@ class Song
       if item.name == title
         item
       end
+    end
   end
 
   def self.find_or_create_by_name(title)
