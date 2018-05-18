@@ -39,6 +39,8 @@ class Song
     results
   end
 
+  def self.find_by_name(title)
+
   def self.destroy_all
     @@all = []
   end
