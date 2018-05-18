@@ -35,13 +35,11 @@ class Song
   end
 
   def self.find_by_name(title)
-    song_found = ""
     @@all.each do |item|
       if title == item.name
-        song_found = item
+        item
       end
     end
-    song_found
   end
 
   def self.find_or_create_by_name(title)
