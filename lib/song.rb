@@ -43,6 +43,9 @@ class Song
     @@all.each do |item|
       if item.name == title
         find_by_name(title)
+      else
+        create_by_name(title)
+      end
   end
 
   def self.destroy_all
