@@ -35,7 +35,7 @@ class Song
   end
 
   def self.find_by_name(title)
-    @@all.each do |item|
+    @@all.collect do |item|
       if title === item.name
         item.name
       end
