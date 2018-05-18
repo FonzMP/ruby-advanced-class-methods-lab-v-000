@@ -44,7 +44,7 @@ class Song
   end
 
   def alphabetical
-
+    @@all.sort
   end
 
   def self.destroy_all
