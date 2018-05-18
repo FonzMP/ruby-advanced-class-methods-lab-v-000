@@ -25,7 +25,8 @@ class Song
   end
 
   def self.create_by_name(title)
-    
+    @@all.collect do |item|
+      if item.name != title
   end
 
   def self.find_by_name(title)
