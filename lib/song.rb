@@ -61,7 +61,16 @@ class Song
   end
 
   def self.create_from_filename(file)
-
+    song_file = file.split(/[.-]/)
+    holder = []
+    song_file.each do |item|
+      holder << item.strip
+    end
+    x = self.new
+    x.name = holder[1]
+    x.artist_name = holder[0]
+    @@all << x
+    x
   end
 
   def self.destroy_all
