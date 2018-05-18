@@ -37,13 +37,13 @@ class Song
   def self.find_by_name(title)
     @@all.each do |item|
       if title == item.name
-        return item
+        item
       end
     end
   end
 
   def self.find_or_create_by_name(title)
-    
+
   end
 
   def self.destroy_all
