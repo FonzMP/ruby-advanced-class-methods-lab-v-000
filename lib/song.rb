@@ -40,7 +40,7 @@ class Song
   end
 
   def self.find_or_create_by_name(title)
-    @@al.each do |item|
+    @@all.each do |item|
       puts item
       binding.pry
     end
