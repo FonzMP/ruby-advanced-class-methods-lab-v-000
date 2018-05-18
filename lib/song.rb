@@ -45,6 +45,7 @@ class Song
     @@all.each do |item|
       if item.name == title
         puts item
+      end
     end
   end
 
