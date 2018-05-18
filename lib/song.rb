@@ -53,12 +53,12 @@ class Song
     song_file.each do |item|
       holder << item.strip
     end
-    puts song_file
-    x = self.new
-    x.name = song_file[1]
-    x.artist_name = song_file[0]
-    @@all << x
-    x
+    puts holder
+    # x = self.new
+    # x.name = song_file[1]
+    # x.artist_name = song_file[0]
+    # @@all << x
+    # x
   end
 
   def self.destroy_all
