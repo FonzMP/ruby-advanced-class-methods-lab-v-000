@@ -47,6 +47,8 @@ class Song
     @@all.sort_by {|word| word.name}
   end
 
+  def self.new_from_file(file)
+
   def self.destroy_all
     @@all = []
   end
