@@ -44,7 +44,7 @@ class Song
     create_by_name(title)
     @@all.each do |item|
       if item.name == title
-        puts item
+        puts item.name
       end
     end
   end
