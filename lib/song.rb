@@ -47,7 +47,7 @@ class Song
     @@all.sort_by {|word| word.name}
   end
 
-  def self.new_from_file(file)
+  def self.new_from_filename(file)
     song_file = song_stripped.split(/[.-]/)
     song_file.collect do |item|
       item.strip
