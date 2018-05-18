@@ -48,6 +48,8 @@ class Song
   end
 
   def self.new_from_file(file)
+    
+  end
 
   def self.destroy_all
     @@all = []
