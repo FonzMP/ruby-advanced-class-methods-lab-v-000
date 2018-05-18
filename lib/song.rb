@@ -29,7 +29,7 @@ class Song
     x = self.new
     x.name = title
     self.all << x
-   x
+    x
   end
 
   def self.find_by_name(title)
