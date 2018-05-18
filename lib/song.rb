@@ -35,7 +35,7 @@ class Song
   end
 
   def self.find_by_name(title)
-    Song.all.detect do |song|
+    self.all.detect {|song| song.name == title}
       if names.name == title
         names
       end
