@@ -26,6 +26,12 @@ class Song
 
   def self.create_by_name(title)
     checker = self.all.detect {|song| song.name == title}
+    if !checker
+      x = self.new
+      x.name = title
+      @@all << x
+      x
+    end
   end
 
   def self.find_by_name(title)
