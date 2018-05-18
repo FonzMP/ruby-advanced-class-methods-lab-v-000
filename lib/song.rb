@@ -43,8 +43,9 @@ class Song
     find_by_name(title)
     create_by_name(title)
     @@all.each do |item|
-      binding.pry
-      puts item.name
+      if item.name == title
+        puts "Hello! You found it!"
+      end
     end
   end
 
