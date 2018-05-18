@@ -35,7 +35,7 @@ class Song
   end
 
   def self.find_by_name(title)
-    self.all.detect{|songs| songs.name == title}
+    results = self.all.detect{|songs| songs.name == title}
   end
 
   def self.find_or_create_by_name(title)
