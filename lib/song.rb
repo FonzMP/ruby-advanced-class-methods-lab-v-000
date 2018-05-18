@@ -31,6 +31,8 @@ class Song
       x.name = title
       @@all << x
       return x
+    else
+      return false
     end
   end
 
