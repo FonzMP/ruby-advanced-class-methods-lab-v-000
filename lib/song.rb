@@ -28,7 +28,9 @@ class Song
     x = self.new
     x.name = title
     @@all.each do |item|
+      binding.pry
       puts item
+    end
     self.all << x
     x
   end
