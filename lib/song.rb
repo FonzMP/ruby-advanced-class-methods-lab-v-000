@@ -21,14 +21,14 @@ class Song
   def self.new_by_name(title)
     x = self.new
     x.name = title
-    x
+    return x
   end
 
   def self.create_by_name(title)
     x = self.new
     x.name = title
     self.all << x
-    x
+    return x
   end
 
   def self.find_by_name(title)
