@@ -39,14 +39,6 @@ class Song
     results
   end
 
-  def self.find_or_create_by_name(title)
-    if !find_by_name(title)
-      create_by_name(tite)
-    else
-      find_by_name(title)
-    end
-  end
-
   def self.destroy_all
     @@all = []
   end
