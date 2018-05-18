@@ -43,7 +43,7 @@ class Song
     find_by_name(title)
     create_by_name(title)
     @@all.each do |item|
-      if find_by_name(title) == create(by_name(title)
+      if find_by_name(title) == create_by_name(title)
         find_by_name(title)
       else
         create_by_name(title)
