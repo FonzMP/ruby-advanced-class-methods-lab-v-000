@@ -50,7 +50,8 @@ class Song
   def self.new_from_file(file)
     song_file = song_stripped.split(/[.-]/)
     song_file.collect do |item|
-      item.strip
+      stripped << item.strip
+    end
     puts song_file
   end
 
