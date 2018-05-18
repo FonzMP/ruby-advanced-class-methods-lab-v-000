@@ -52,6 +52,11 @@ class Song
     song_file.collect do |item|
       item.strip
     end
+    x = self.new
+    x.name = song_file[1]
+    x.artist_name = song_file[0]
+    @@all << x
+    x
   end
 
   def self.destroy_all
