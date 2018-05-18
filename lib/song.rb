@@ -27,12 +27,7 @@ class Song
   def self.create_by_name(title)
     x = self.new
     x.name = title
-    # binding.pry
-    @@all.each do |item|
-      if item.name != title
-        @@all << x
-      end
-    end
+    self.all << x
     x
   end
 
