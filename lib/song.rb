@@ -48,7 +48,7 @@ class Song
   end
 
   def self.new_from_filename(file)
-    song_file = song_stripped.split(/[.-]/)
+    song_file = file.split(/[.-]/)
     song_file.collect do |item|
       item.strip
     end
