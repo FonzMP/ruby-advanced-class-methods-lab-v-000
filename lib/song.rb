@@ -27,6 +27,8 @@ class Song
   def self.create_by_name(title)
     x = self.new
     x.name = title
+    @@all.each do |item|
+      puts item
     self.all << x
     x
   end
