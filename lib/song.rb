@@ -27,7 +27,9 @@ class Song
   def self.create_by_name(title)
     x = self.new
     x.name = title
-    self.all << x
+    @@all.each do |item|
+      if item.name != title
+        self.all << x
     x
   end
 
