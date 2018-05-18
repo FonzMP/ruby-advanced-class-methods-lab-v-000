@@ -48,7 +48,7 @@ class Song
   end
 
   def self.new_from_file(file)
-    song_file = file.split(" - ")
+    song_file = file.split(/[.-]/)
     puts song_file
   end
 
