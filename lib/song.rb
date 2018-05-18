@@ -48,7 +48,7 @@ class Song
   end
 
   def self.new_from_file(file)
-    
+    song_file = file.split(" - ")
   end
 
   def self.destroy_all
