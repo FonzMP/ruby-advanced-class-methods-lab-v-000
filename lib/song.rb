@@ -53,7 +53,6 @@ class Song
     song_file.each do |item|
       holder << item.strip
     end
-    puts holder
     x = self.new
     x.name = holder[1]
     x.artist_name = holder[0]
