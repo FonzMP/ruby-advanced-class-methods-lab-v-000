@@ -43,7 +43,7 @@ class Song
     self.find_by_name(title)
   end
 
-  def alphabetical
+  def self.alphabetical
     @@all.sort_by? {|word| word.name}
   end
 
