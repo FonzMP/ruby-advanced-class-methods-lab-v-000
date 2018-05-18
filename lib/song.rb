@@ -48,6 +48,8 @@ class Song
     checker = create_by_name(title)
     if checker == nil
       find_by_name(title)
+    else
+      create_by_name(title)
     end
   end
 
