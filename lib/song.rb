@@ -26,7 +26,7 @@ class Song
 
   def self.create_by_name(title)
     x = self.new
-    x.name = @name
+    x.name = title
     self.all << x
     x
   end
@@ -40,12 +40,7 @@ class Song
   end
 
   def self.find_or_create_by_name(title)
-    if find_by_name(title)
-      self.find_by_name(title)
-    else
-      self.create_by_name(title)
-      self.create
-    end
+    find_by_name(title)
   end
 
   def self.destroy_all
