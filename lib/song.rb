@@ -30,6 +30,8 @@ class Song
     @@all.each do |item|
       if item.name != title
         self.all << x
+      end
+    end
     x
   end
 
