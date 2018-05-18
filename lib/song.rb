@@ -35,8 +35,7 @@ class Song
   end
 
   def self.find_by_name(title)
-    @@all.include?(title)
-    end
+    check = @@all.include?(title)
   end
 
   def self.find_or_create_by_name(title)
