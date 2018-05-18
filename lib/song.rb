@@ -56,7 +56,7 @@ class Song
     puts holder
     x = self.new
     x.name = holder[1]
-    x.artist_name = song_file[0]
+    x.artist_name = holder[0]
     @@all << x
     x
   end
