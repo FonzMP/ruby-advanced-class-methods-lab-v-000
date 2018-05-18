@@ -52,6 +52,7 @@ class Song
     song_file.collect do |item|
       item.strip
     end
+    puts song_file
     x = self.new
     x.name = song_file[1]
     x.artist_name = song_file[0]
