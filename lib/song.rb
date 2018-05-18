@@ -44,6 +44,7 @@ class Song
     create_by_name(title)
     @@all.each do |item|
       puts item.name
+      binding.pry
     end
   end
 
