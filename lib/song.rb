@@ -35,11 +35,10 @@ class Song
   end
 
   def self.find_by_name(title)
-    checker = self.all.detect {|song| song.name == title}
-      if checker
-        song
+    @@all.each do |item|
+      if item.name == title
+        item
       end
-    end
   end
 
   def self.find_or_create_by_name(title)
