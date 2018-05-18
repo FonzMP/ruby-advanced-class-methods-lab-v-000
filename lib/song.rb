@@ -45,7 +45,9 @@ class Song
   end
 
   def self.find_or_create_by_name(title)
-    
+    if find_by_name(title) == ""
+      puts "Hello"
+    end
   end
 
   def self.destroy_all
