@@ -53,7 +53,6 @@ class Song
     song_file.collect do |item|
       stripped << item.strip
     end
-    
   end
 
   def self.destroy_all
