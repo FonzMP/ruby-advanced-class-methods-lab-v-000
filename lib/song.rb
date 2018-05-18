@@ -41,6 +41,7 @@ class Song
 
   def self.find_or_create_by_name(title)
     @@all.each do |item|
+      binding.pry
       if item.name == title
         find_by_name(title)
       else
