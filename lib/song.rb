@@ -41,6 +41,7 @@ class Song
         song_found << item
       end
     end
+    song_found
   end
 
   def self.find_or_create_by_name(title)
