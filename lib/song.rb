@@ -43,8 +43,10 @@ class Song
     find_by_name(title)
     create_by_name(title)
     @@all.each do |item|
-      if title == item.name
-        puts "Hello! You found it!"
+      if find_by_name(title) == create(by_name(title)
+        find_by_name(title)
+      else
+        create_by_name(title)
       end
     end
   end
