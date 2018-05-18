@@ -36,8 +36,7 @@ class Song
 
   def self.find_by_name(title)
     checker = self.all.detect {|song| song.name == title}
-      if names.name == title
-        names
+      if checker
       end
     end
   end
