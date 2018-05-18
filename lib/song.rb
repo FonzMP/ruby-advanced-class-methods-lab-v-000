@@ -43,8 +43,8 @@ class Song
     find_by_name(title)
     create_by_name(title)
     @@all.each do |item|
-      puts item.name
       binding.pry
+      puts item.name
     end
   end
 
