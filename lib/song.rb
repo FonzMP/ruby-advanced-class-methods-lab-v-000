@@ -43,6 +43,10 @@ class Song
     self.find_by_name(title)
   end
 
+  def alphabetical
+
+  end
+
   def self.destroy_all
     @@all = []
   end
