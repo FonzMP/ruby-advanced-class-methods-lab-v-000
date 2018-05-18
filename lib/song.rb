@@ -49,7 +49,7 @@ class Song
 
   def self.new_from_filename(file)
     song_file = file.split(/[.-]/)
-    song_file.collect do |item|
+    song_file.each do |item|
       item.strip
     end
     puts song_file
