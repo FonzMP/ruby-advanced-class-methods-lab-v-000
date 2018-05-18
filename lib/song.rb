@@ -38,7 +38,7 @@ class Song
     song_found = []
     @@all.each do |item|
       if title == item.name
-        song_found << item
+        song_found = item
       end
     end
     song_found
