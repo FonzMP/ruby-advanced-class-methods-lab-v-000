@@ -39,11 +39,7 @@ class Song
   end
 
   def self.find_or_create_by_name(title)
-    if create_by_name(title) == nil
-      puts "It aint here boss"
-    else
-      create_by_name(title)
-    end
+    
   end
 
   def self.destroy_all
