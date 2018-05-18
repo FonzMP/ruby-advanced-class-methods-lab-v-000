@@ -30,7 +30,7 @@ class Song
     binding.pry
     @@all.each do |item|
       if item.name != title
-        self.all << x
+        @@all
       end
     end
     x
